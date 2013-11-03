@@ -133,6 +133,21 @@ a, a:active, a:visited {
   text-decoration: none;
 }
 
+.home-content-top > div:first-child p a:last-child {
+  position: relative;
+  top: 7px;
+  display: inline;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  background: #989c62;
+  color: #fff;
+}
+
+.home-content-top > div:first-child p a:last-child:hover {
+  background: #7c8050;
+  text-decoration: none;
+}
+
 .home-content-bottom-container {
   padding-top: 40px;
   background-image: url(img/torn-paper.png);
@@ -186,30 +201,27 @@ a, a:active, a:visited {
 }
 
 
+.home-content-bottom .site-home-big-links > .individual-box p a:last-child {
+  background: #d1d1c3;
+  color: #4d4d46;
+  border-bottom: 3px solid #b3b3a7;
+  padding: 7px 10px;
+  display: inline-block;
+  text-align: left;
+  font-weight: bold;
+  text-transform: uppercase;
+  *display: inline;
+  zoom: 1;
+}
+
+.home-content-bottom .site-home-big-links > .individual-box p a:last-child:hover {
+  background: #b3b3a7;
+  text-decoration: none;
+}
+
+
 .site-home-content-bottom .content-area {
   position: relative;
-}
-
-.site-home-content-bottom .content-area > .learn-more {
-  position: absolute;
-  top: 12px;
-  right: 5px;
-  text-transform: uppercase;
-  font-size: 13px;
-}
-
-.site-home-content-bottom .content-area > .learn-more > a {
-  background: none;
-  padding: 4px 10px;
-  border-radius: 3px;
-  border: 1px solid #efefef;
-  color: #bbb;
-}
-
-.site-home-content-bottom .content-area > .learn-more > a:hover {
-  background: green;
-  color: #fff;
-  text-decoration: none;
 }
 
 .hr-rule-shadow {
@@ -245,6 +257,23 @@ a, a:active, a:visited {
 }
 
 .home-content-bottom .home-bottom-sub-area > a:last-child:hover {
+  background: #b3b3a7;
+  text-decoration: none;
+}
+
+
+.home-content-bottom .home-bottom-sub-area > p a:last-child {
+  position: absolute;
+  top: 19px;
+  right: 5px;
+  color: #4d4d46;
+  border: 1px solid #b3b3a7;
+  text-transform: uppercase;
+  font-size: 11px;
+  padding: 4px 7px 3px;
+}
+
+.home-content-bottom .home-bottom-sub-area > p a:last-child:hover {
   background: #b3b3a7;
   text-decoration: none;
 }
