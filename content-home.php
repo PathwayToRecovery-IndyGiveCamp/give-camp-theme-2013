@@ -16,15 +16,12 @@
 		<div class="container">
 			<div class="row site-home-big-links">
 				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 individual-box">
-					<img src="<?php bloginfo('template_directory'); ?>/img/sample-image.jpg" />
 					<?php the_block('Middle Content - Left') ?>
 				</div>
 				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 individual-box">
-					<img src="<?php bloginfo('template_directory'); ?>/img/sample-image.jpg" />
 					<?php the_block('Middle Content - Middle') ?>
 				</div>
 				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 individual-box">
-					<img src="<?php bloginfo('template_directory'); ?>/img/sample-image.jpg" />
 					<?php the_block('Middle Content - Right') ?>
 				</div>
 			</div>

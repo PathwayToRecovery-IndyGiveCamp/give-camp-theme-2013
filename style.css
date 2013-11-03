@@ -143,6 +143,8 @@ a, a:active, a:visited {
 .home-content-top .top-headline img, iframe.yp {
   border: 5px solid #fff;
   box-shadow: 0 0 5px 0 rgba(0,0,0,.2);
+  max-width: 100%;
+  height: auto;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
