@@ -400,7 +400,7 @@ a, a:active, a:visited {
     text-align: left;
   }
 }
-
+ 
 @media (max-width: 768px) {
   .navigation .navbar-nav > li {
     float: none;
