@@ -17,6 +17,7 @@
     <link rel="alternate" type="application/rss+xml" href="<?php bloginfo('rss_url'); ?>" />
     <link rel="alternate" type="application/rss+xml" href="<?php bloginfo('rss2_url'); ?>" />
     <link rel="alternate" type="application/atom+xml" href="<?php bloginfo('atom_url'); ?>" />
+    <link rel="alternate" type="application/json" href="<?php bloginfo('url'); ?>/?feed=json" />
     <!--[if lt IE 9]>
       <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/html5shiv.js"></script>
       <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/respond.js"></script>
