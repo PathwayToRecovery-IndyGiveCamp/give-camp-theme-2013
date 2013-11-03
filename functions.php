@@ -67,7 +67,8 @@ function bv_post_class($classes) {
 register_nav_menus(array(
   'primary' => 'Navigation Menu',
   'locations' => 'Pathways',
-  'resources' => 'Footer Resources'
+  'resources' => 'Footer Resources',
+  'people' => 'People Menu'
 ));
 add_filter('excerpt_more', 'new_excerpt_more');
 add_filter('excerpt_length', 'custom_excerpt_length', 999);
