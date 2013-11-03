@@ -15,6 +15,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 /* THEME STYLES */
 
+html, body{
+    height: 100%
+}
+
 body {
   background: #dfdfd2 url(img/background-repeat.png) repeat;
   border-top: 5px solid #4d4d4d;
@@ -28,6 +32,33 @@ h1, h2, h3, h3, h5, h6 {
 
 a, a:active, a:visited {
   color: #7c8050;
+}
+
+
+.wrapper {
+  min-height: 100%;
+  position:relative;
+}
+
+.push {
+  padding-bottom: 260px;
+  background: url(img/home-bottom-bg.jpg) repeat;
+}
+
+.site-footer {
+  height:260px;
+  width:100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.site-footer {
+  height:260px;
+  width:100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 .sub-menu {
@@ -153,11 +184,13 @@ a, a:active, a:visited {
   background-image: url(img/torn-paper.png);
   background-repeat: repeat-x;
   background-position: top center;
+  position: relative;
+  top: -40px;
+  margin-top: 40px;
 }
 
 .home-content-bottom {
   padding-top: 20px;
-  background: url(img/home-bottom-bg.jpg) repeat;
 }
 
 .home-content-bottom .site-home-big-links {
