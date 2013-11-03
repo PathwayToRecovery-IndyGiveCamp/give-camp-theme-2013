@@ -29,16 +29,10 @@
 				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 individual-box">
 					<img src="<?php bloginfo('template_directory'); ?>/img/sample-image.jpg" />
 					<?php the_block('Middle Content - Middle') ?>
-					<!--h3>Volunteer</h3>
-					<p>Filler text will go here</p>
-					<a href="#">Link to content</a!-->
 				</div>
 				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 individual-box">
 					<img src="<?php bloginfo('template_directory'); ?>/img/sample-image.jpg" />
 					<?php the_block('Middle Content - Right') ?>
-					<!--h3>Apply</h3>
-					<p>Filler text will go here</p>
-					<a href="#">Link to content</a-->
 				</div>
 			</div>
 			<div class="row hr-rule-shadow">
@@ -55,9 +49,6 @@
 				</div>
 				<div class="col-xs-12 col-sm-7 col-md-7 col-lg-7 home-bottom-sub-area clearfix">
 					<?php the_block('Alumni Spotlight') ?>
-					<!--h3>Alumni Spotlight</h3>
-					<p>More text that we need to decide about. And I need to make this longer to see how big the div really is. Kinda small haha</p>
-					<a href="#">Learn More</a--->
 				</div>
 			</div>
 		</div>
