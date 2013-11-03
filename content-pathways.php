@@ -10,7 +10,7 @@
 							array(
 								'theme_location' => 'locations',
 								'sort_column'    => 'menu_order', 
-								'container'      => 'ul',
+								'container'      => 'ul', // actuall removed the container. weird right?
 								'container_class' => '',
 								'menu_class'     => '',
 								'items_wrap'     => '%3$s',

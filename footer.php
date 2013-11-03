@@ -3,13 +3,33 @@
       <div class="row footer-content">
         <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
           <h4>Pages</h4>
-          <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Programs</a></li>
-            <li><a href="#">Partners</a></li>
-            <li><a href="#">Apply</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
+          <?php
+          $menu_name = 'primary';
+
+          if ( ( $locations = get_nav_menu_locations() ) && isset( $locations[ $menu_name ] ) ) {
+            $menu = wp_get_nav_menu_object( $locations[ $menu_name ] );
+
+            $menu_items = wp_get_nav_menu_items($menu->term_id);
+
+            if( count( $menu_items ) > 0 ) {
+
+              $menu_list = '<ul>';
+
+              foreach ( (array) $menu_items as $key => $menu_item ) {
+                
+                if( $menu_item->post_parent == 0 ) {
+                  $title = $menu_item->title;
+                  $url = $menu_item->url;
+                  $menu_list .= '<li><a href="' . $url . '">' . $title . '</a></li>';
+                }
+              }
+              $menu_list .= '</ul>';
+            }
+          } else {
+            $menu_list = '';
+          }
+          echo $menu_list;
+          ?>
         </div>
         <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
           <h4>Resources</h4>
