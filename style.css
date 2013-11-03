@@ -333,6 +333,12 @@ a, a:active, a:visited {
   padding: 25px 0;
 }
 
+.site-footer > .container {
+	background-image: url( /img/footer-logo.png );
+	background-repeat: no-repeat;
+	background-position: bottom right;
+}
+
 .site-footer a {
   color: #fff;
   text-decoration: none;
@@ -430,21 +436,19 @@ a, a:active, a:visited {
 }
 
 @media (max-width: 768px) {
-  .navigation .navbar-nav {
-    margin-left: 0;
-  }
-  .navigation .navbar-nav > li {
-    float: none;
-    width: 100%;
-    text-align: left;
-  }
-}
- 
-@media (max-width: 768px) {
-  .navigation .navbar-nav > li {
-    float: none;
-    width: 100%;
-    text-align: left;
-    margin-left: 20px;
-  }
-}
+	.navigation .navbar-nav {
+		margin-left: 0;
+	}
+	.navigation .navbar-nav > li {
+		float: none;
+		width: 100%;
+		text-align: left;
+		margin-left: 20px;
+	}
+	.push {
+		padding-bottom: 420px;
+	}
+	.site-footer {
+		height: 420px;
+	}
+ }
