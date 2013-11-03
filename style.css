@@ -284,6 +284,7 @@ a, a:active, a:visited {
 
 .page-content-container {
   padding-bottom: 40px;
+  min-height: 335px;
 }
 
 .site-footer {
@@ -368,6 +369,10 @@ a, a:active, a:visited {
 , .navbar-default .navbar-nav>.open > a:focus {
   color: #fff;
   background-color: #7c8050;
+}
+
+.navbar-default .navbar-brand {
+  color: #fff;
 }
 
 .dropdown-menu {
