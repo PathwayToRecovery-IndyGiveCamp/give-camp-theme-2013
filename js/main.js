@@ -13,7 +13,7 @@ $(document).ready(function() {
     if( data.content.length > contentLength ) {
       data.content = data.content.substr(0, contentLength) + '...';
     }
-    var tmpContent = '<h3>'+ data.title +'</h3><p>'+ data.content +'</p><a href="'+ data.permalink +'">Learn More</a>'; 
+    var tmpContent = '<h3>'+ data.title +'</h3><p>'+ data.content +'</p><a href="'+ data.permalink +'">Learn More</a>';
     $('#newsResults').parent().html( tmpContent );
   });
 
@@ -21,9 +21,10 @@ $(document).ready(function() {
 
     $('.nav.navbar-nav').find('li > .sub-menu').addClass('dropdown-menu').prev().attr('data-toggle', 'dropdown').parent().addClass('dropdown');
 
-    callback($, window, delay);
-
-  };
+    if( $('.navbar-header').height() <= 0 ) {
+        callback($, window, delay);
+    }
+  }
 
   updateNav( $, window, 0, function ($, window, delay) {
     // http://jsfiddle.net/AndreasPizsa/NzvKC/
