@@ -46,16 +46,13 @@ function is_sidebar_active($index) {
 function bv_load_js() {
   if(!is_admin()) {
     wp_deregister_script('jquery'); 
-    wp_register_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js', array(), '1.8.2', false);  
+    wp_register_script('jquery', get_template_directory_uri() . '/js/jquery.js', array(), '1.10.2', true);  
     wp_enqueue_script('jquery'); 
 
-    wp_register_script('bootstrap', get_template_directory_uri() . '/js/bootstrap.js', array('jquery'), '2.1.1', true );
+    wp_register_script('bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), '3.0.1', true );
     wp_enqueue_script('bootstrap');   
 
-    wp_register_script('prettify', get_template_directory_uri() . '/js/prettify.js', array('jquery'), '', true );
-    wp_enqueue_script('prettify');
-
-    wp_register_script('main', get_template_directory_uri() . '/js/app.js', array('bootstrap'), '.1', true);
+    wp_register_script('main', get_template_directory_uri() . '/js/main.js', array('bootstrap'), '1', true);
     wp_enqueue_script('main');
   }
 }
@@ -67,21 +64,24 @@ function bv_post_class($classes) {
   return $classes;
 }
 
-register_nav_menu('primary', 'Navigation Menu');
+register_nav_menus(array(
+  'primary' => 'Navigation Menu'
+));
 add_filter('excerpt_more', 'new_excerpt_more');
 add_filter('excerpt_length', 'custom_excerpt_length', 999);
 add_filter('post_class', 'bv_post_class');
 add_action('wp_enqueue_scripts','bv_load_js');
-add_action('init', 'bv_widget_init');
+//add_action('init', 'bv_widget_init');
 //add_theme_support('custom-background');
-add_theme_support('post-thumbnails'); 
-add_theme_support( 'infinite-scroll', array(
+//add_theme_support('post-thumbnails'); 
+/*add_theme_support( 'infinite-scroll', array(
     'container'  => 'posts-index',
     'footer'     => 'footer-all'
-));
+));*/
 
 add_theme_support( 'custom-header', array(
-  'default-image'          => get_template_directory_uri() . '/img/main-logo.png',
+  //'default-image'          => get_template_directory_uri() . 'img/main-logo.png',
+  'default-image'          => 'http://placehold.it/300x100',
   'random-default'         => false,
   'width'                  => 204,
   'height'                 => 125,
@@ -90,10 +90,6 @@ add_theme_support( 'custom-header', array(
   'header-text'            => false,
   'uploads'                => true
 ));
-
-
-
-
 
 
 ?>

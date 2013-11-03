@@ -1,11 +1,15 @@
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-    <header class="wp-page-header">
-        <h3 class="wp-page-title"><?php the_title(); ?></h3>
-        <?php edit_post_link('Edit', '<span class="label label-info edit-content-btn">', '</span>'); ?>
-    </header><!-- .wp-page-header -->
- 
-    <div class="wp-page-content">
-        <?php the_content(); ?>
-        <?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:' ), 'after' => '</div>' ) ); ?>
-    </div><!-- .wp-page-content -->
-</article><!-- #post-<?php the_ID(); ?> -->
+<section class="home-content-bottom-container">
+	<section class="home-content-bottom page-content-container">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 sidebar-content-area">
+					<?php the_block('Left Sidebar'); ?>
+				</div>
+				<div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+					<h1><?php the_title(); ?></h1>
+					<?php the_content(); ?>
+				</div>
+			</div>
+		</div>
+	</section>
+</section>

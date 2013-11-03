@@ -1,45 +1,62 @@
-  </div>
-      <?php if(is_single()) { ?>
-      <div class="span4 sidebar single-nav">
-        <h3 class="hidden-desktop">Post Navigation</h3>
-        <div class="sidebar">
-          <div class="single-prev">
-            <?php 
-              $p = get_adjacent_post(0,'',1);
-              if(!empty($p)) {
-            ?>
-              <a href="<?php echo get_permalink($p->ID); ?>" rel="popover" data-original-title="<strong>Previous Post</strong>" data-content="<?php echo $p->post_title; ?>"><img src="<?php bloginfo('template_directory'); ?>/img/single-prev.png" /></a>
-            <?php } else { ?>
-              <a href="#" class="unclickable"><img src="<?php bloginfo('template_directory'); ?>/img/trans-1x1.gif" width="92" height="91" /></a>
-            <?php } ?>
-          </div
-          ><div class="single-next">
-            <?php 
-              $n = get_adjacent_post(0,'',0);
-              if(!empty($n)) {
-            ?>
-              <a href="<?php echo get_permalink($n->ID); ?>" rel="popover" data-original-title="<strong>Next Post</strong>" data-content="<?php echo $n->post_title; ?>"><img src="<?php bloginfo('template_directory'); ?>/img/single-next.png" /></a>
-            <?php } else { ?>
-              <a href="#" class="unclickable"><img src="<?php bloginfo('template_directory'); ?>/img/trans-1x1.gif" width="92" height="91" /></a>
-            <?php } ?>
-          </div>
+<footer class="site-footer">
+    <div class="container">
+      <div class="row footer-content">
+        <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Programs</a></li>
+            <li><a href="#">Partners</a></li>
+            <li><a href="#">Apply</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">List 1</a></li>
+            <li><a href="#">List 1</a></li>
+            <li><a href="#">List 1</a></li>
+            <li><a href="#">List 1</a></li>
+            <li><a href="#">List 1</a></li>
+            <li><a href="#">List 1</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 hidden-xs">
+          <h4>Contact</h4>
+          <address>
+            <strong>Pathway to Recovery</strong><br/>
+            2135 N. Alabama St<br/>
+            Indianapolis, IN 46202<br/>
+            <abbr title="Phone">P:</abbr> (317) 926-8557<br />
+            <abbr title="Fax">F:</abbr> (317) 926-2250
+          </address>
         </div>
       </div>
-      <?php } ?>
-      <?php if(is_sidebar_active('primary_widget_area') || is_sidebar_active('secondary_widget_area')) { ?>
-      <div class="span4 sidebar">
-        <?php get_sidebar(); ?>
+      <div class="row visible-xs">
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+          <h4>Contact</h4>
+          <address>
+            <strong>Pathway to Recovery</strong><br/>
+            2135 N. Alabama St<br/>
+            Indianapolis, IN 46202<br/>
+            <abbr title="Phone">P:</abbr> (317) 926-8557<br />
+            <abbr title="Fax">F:</abbr> (317) 926-2250
+          </address>
+        </div>
       </div>
-      <?php } ?>
-    </div>
-  </div>
-  <footer id="footer-all" class="container">
-    <div class="row-fluid copyright">
-      <div class="span12">
-        &copy; 2010-<?php echo date('Y'); ?> Alex Vernacchia. Theme <a href="https://github.com/vernak2539/ByVernacchia-Blog-Theme" target="_blank">ByVernacchia</a> by Alex Vernacchia
-      </div>
+      <section class="copyright">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            Copyright 2013 Pathway to Recovery, Inc. / CFC 56320 / SECC 686300
+          </div>
+        </div>
+      </section>
     </div>
   </footer>
   <?php wp_footer(); ?>
-  </body>
+  <!--script type="text/javascript" src="/js/jquery.min.js"></script>
+  <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="/js/main.js"></script-->
+</body>
 </html>
