@@ -3,13 +3,9 @@
 		<div class="row top-headline">
 			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 				<?php the_block('Home Page Video/Image') ?>
-				<!--img src="http://placehold.it/600x300" width="600" height="300" class="img-responsive" /-->
 			</div>
 			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 				<?php the_block('Home Page Headline') ?>
-				<!--h1>2013 Pathway Recovery Roundup</h1>
-				<p>Fake text will go here. We'll decide what text goes where when we start transferring content</p>
-				<a href="#" class="link">Learn How You Can Help</a-->
 			</div>
 		</div>
 	</div>
@@ -22,9 +18,6 @@
 				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 individual-box">
 					<img src="<?php bloginfo('template_directory'); ?>/img/sample-image.jpg" />
 					<?php the_block('Middle Content - Left') ?>
-					<!--h3>Donate</h3>
-					<p>Filler text will go here</p>
-					<a href="#">Link to content</a-->
 				</div>
 				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 individual-box">
 					<img src="<?php bloginfo('template_directory'); ?>/img/sample-image.jpg" />

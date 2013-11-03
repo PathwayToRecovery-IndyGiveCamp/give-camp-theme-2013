@@ -63,8 +63,7 @@
                   'container_class' => '',
                   'menu_class'     => '',
                   'items_wrap'     => '%3$s',
-                  'depth'          => 2//,
-                  //'walker'         => new JC_Submenu_Nav_Walker()
+                  'depth'          => 2
                 )
               );
               ?>
