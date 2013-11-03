@@ -334,7 +334,7 @@ a, a:active, a:visited {
 }
 
 .site-footer > .container {
-	background-image: url( /img/footer-logo.png );
+	background-image: url( img/footer-logo.png );
 	background-repeat: no-repeat;
 	background-position: bottom right;
 }
