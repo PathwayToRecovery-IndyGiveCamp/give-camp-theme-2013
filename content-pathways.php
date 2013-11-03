@@ -1,4 +1,4 @@
-<section class="home-content-bottom-container">
+<section class="page-content-bottom-container">
 	<section class="home-content-bottom page-content-container">
 		<div class="container">
 			<div class="row">

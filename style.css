@@ -179,7 +179,11 @@ a, a:active, a:visited {
   text-decoration: none;
 }
 
-.home-content-bottom-container {
+.home-content-top > .container {
+	padding-top: inherit;
+}
+
+.page-content-bottom-container, .home-content-top {
   padding-top: 40px;
   background-image: url(img/torn-paper.png);
   background-repeat: repeat-x;
