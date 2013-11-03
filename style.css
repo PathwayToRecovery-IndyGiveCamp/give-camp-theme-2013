@@ -49,6 +49,10 @@ a, a:active, a:visited {
   background: url(img/facebook-tab.png) no-repeat;
 }
 
+.logos {
+  margin-bottom: 25px;
+}
+
 .logos img {
   max-width: 100%;
   height: auto;

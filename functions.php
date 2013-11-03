@@ -81,11 +81,10 @@ add_action('wp_enqueue_scripts','bv_load_js');
 ));*/
 
 add_theme_support( 'custom-header', array(
-  //'default-image'          => get_template_directory_uri() . 'img/main-logo.png',
-  'default-image'          => 'http://placehold.it/300x100',
+  'default-image'          => get_template_directory_uri() . '/img/main-logo.png',
   'random-default'         => false,
-  'width'                  => 204,
-  'height'                 => 125,
+  'width'                  => 252,
+  'height'                 => 104,
   'flex-height'            => true,
   'flex-width'             => true,
   'header-text'            => false,
