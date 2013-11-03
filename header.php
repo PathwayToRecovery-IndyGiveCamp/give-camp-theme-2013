@@ -34,7 +34,7 @@
       <section class="logos">
         <div class="container clearfix">
           <a href="<?php echo bloginfo('wpurl'); ?>"><img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="<?php bloginfo('name'); ?>" /></a>
-          <h1>Sober Living for Homeless Hoosiers</h1>
+          <img src="<?php bloginfo('template_directory'); ?>/img/sober-living.png" style="float:right; margin-top: 35px; max-width: 100%; height: auto;" />
         </div>  
       </section>
 
